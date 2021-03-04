@@ -1,7 +1,7 @@
-# CRYPTOGRAPHY
+## CRYPTOGRAPHY
 - Cryptography converts data into a particular form so that only those for whom it is intended can read and process it. The converted data is however unreadable for an unauthorized user
 
-# HASH
+## HASH
 - A hash function converts data of any size into a string of a fixed size
 - A small change in the data will result in a complete different hash
 - When to different inputs produces the same hash, it is called a hash collision
@@ -16,11 +16,8 @@
  | sha256 | 256 bits (64 symbols) | `Yes` |
  | keccak-256 | 256 bits (64 symbols) | `Yes` |
 
-md = message digest
-ripemd = RACE integrity primitives evaluation message digest
-sha = secure hash algorithm
-
-
-
+`md = message digest`
+`ripemd = RACE integrity primitives evaluation message digest`
+`sha = secure hash algorithm`
 
 ``` Resources credit: https://www.mobilefish.com/ ```
