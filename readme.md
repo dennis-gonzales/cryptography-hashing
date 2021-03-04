@@ -10,11 +10,11 @@
 
  | Hash function | Hash length | Secure |
  | :--- | :--- | :--- |
- | md5 | 128 bits | (32 symbols) | `No` |
- | ripemd160 | 160 bits | (40 symbols) | `Yes` |
- | sha1 | 160 bits | (40 symbols) | `No`  |
- | sha256 | 256 bits | (64 symbols) | `Yes` |
- | keccak-256 | 256 bits | (64 symbols) | `Yes` |
+ | md5 | 128 bits (32 symbols) | `No` |
+ | ripemd160 | 160 bits (40 symbols) | `Yes` |
+ | sha1 | 160 bits (40 symbols) | `No`  |
+ | sha256 | 256 bits (64 symbols) | `Yes` |
+ | keccak-256 | 256 bits (64 symbols) | `Yes` |
 
 md = message digest
 ripemd = RACE integrity primitives evaluation message digest
