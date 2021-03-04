@@ -9,6 +9,7 @@
 - There are many different hash functions
 
 | Hash function | Hash length | Secure |
+| :--- | :--- | :--- | :--- |
 | md5 | 128 bits | (32 symbols) | `No` |
 | ripemd160 | 160 bits | (40 symbols) | `Yes` |
 | sha1 | 160 bits | (40 symbols) | `No`  |
