@@ -25,7 +25,7 @@
 - A hash function converts data of any size into a string of a fixed size
 - A small change in the data will result in a complete different hash
 - When to different inputs produces the same hash, it is called a hash collision
-- A hash function is considered “collision resistant” when it is very hard to find two inputs that hash to the same output
+- A hash function is considered **“collision resistant”** when it is very hard to find two inputs that hash to the same output
 - There are many different hash functions. Here are just a few:
 
  | Hash function | Hash length | Secure |
@@ -42,6 +42,14 @@
 *ripemd = RACE integrity primitives evaluation message digest*
 
 *sha = secure hash algorithm*
+
+
+## Digital Signature
+- A digital signature is equivalent of a handwritten signature but it is much more secure, a handwritten signature can be faked
+- A digital signature provides the recipient the following information:
+   1. the message was created by a known sender **(authentication)**,
+   2. the sender cannot deny having sent the message **(non-repudiation)**,
+   3. the message was not altered in transit **(integrity)**
 
 
 > Resources credit: [Mobile Fish](https://www.mobilefish.com)
