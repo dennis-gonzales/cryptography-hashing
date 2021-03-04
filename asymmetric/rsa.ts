@@ -1,7 +1,7 @@
 import * as NodeRSA from 'node-rsa';
 
-/** Generating keys */
-const key = new NodeRSA({ b: 1024 });
+console.log("Generating Keys...");
+const key = new NodeRSA({ b: 2048 });
 const privateKey = key.exportKey('private');
 const publicKey = key.exportKey('public');
 
@@ -10,32 +10,32 @@ console.log();
 console.log(publicKey);
 console.log();
 
-/** Declaration of secret message */
+/** Declaration of secret */
 const secret = 'Hello World!';
 
-/** Encrypting the secret message */
-const encryptedString = new NodeRSA(publicKey)
-    .encrypt(secret, 'base64');
+console.log("Encrypting the secret...");
+const encryptedString = new NodeRSA({ b: 2048 })
+    .importKey(publicKey).encrypt(secret, 'base64');
 
-console.log("encryptedString: ", encryptedString);
+console.log("Encrypted Secret: ", encryptedString);
 console.log();
 
 
-/** Decrypting the secret message */
-const decryptedString = new NodeRSA(privateKey).
-    decrypt(encryptedString, 'utf8');
-
+/** Decrypting the secret */
 console.log("Decrypting using correct key");
+const decryptedString = new NodeRSA({ b: 2048 })
+    .importKey(privateKey).decrypt(encryptedString, 'utf8');
+
 console.log("Decryption suceeded: ", decryptedString);
 console.log();
 
 
 /** Decrypting the secret message using wrong private address */
 try {
+    console.log("Decrypting using wrong key");
     const key2 = new NodeRSA({ b: 1024 });
     const privateKey2 = key2.exportKey('private');
 
-    console.log("Decrypting using wrong key");
     new NodeRSA(privateKey2).
         decrypt(encryptedString, 'utf8');
 
