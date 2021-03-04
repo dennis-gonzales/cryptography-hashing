@@ -19,3 +19,8 @@
 md = message digest
 ripemd = RACE integrity primitives evaluation message digest
 sha = secure hash algorithm
+
+
+
+
+``` Resources credit: https://www.mobilefish.com/ ```
