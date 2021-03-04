@@ -42,5 +42,5 @@ try {
     console.error("Decryption suceeded: This shouldn't happen!");
 
 } catch (e) {
-    console.log(`Decryption failed: ${e.message}`);
+    console.log(`Decryption failed as expected with error:\n${e.message}`);
 }
