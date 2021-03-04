@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "md5": "^2.3.0"
+    "js-sha256": "^0.9.0",
+    "md5": "^2.3.0",
+    "sha-1": "^1.0.0"
   },
   "devDependencies": {
     "@types/md5": "^2.3.0"
